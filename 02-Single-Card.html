@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .container {
+      width: 80%;
+      height: 600px;
+      background: linear-gradient(180deg, rgb(239, 114, 255), rgb(208, 55, 255), rgb(128, 18, 255));
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .card {
+      width: 35%;
+      height: 550px;
+      background-color: white;
+      border-radius: 35px 35px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .butterflyjpg {
+      border-radius: 35px 35px 0 0;
+    }
+
+    .p-div {
+      background-color: white;
+      z-index: 10;
+      position: absolute;
+      border-radius: 50%;
+      width: 35%;
+      height: 125px;
+      margin-top: 150px;
+      box-shadow: 0 1px 20px 2px gray;
+    }
+
+    .doodle {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mf {
+      margin-top: 75px;
+      color: gray;
+    }
+
+    .bc {
+      margin-top: -10px;
+      color: rgb(186, 186, 186);
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+
+    .dots {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .following {
+      color: gray;
+      margin-left: -200px;
+      display: flex;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      flex-direction: column;
+    }
+
+    .flwn {
+      color: rgb(0, 170, 255);
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .txtflwn {
+      margin-top: -20px;
+      margin-left: -15px;
+    }
+
+    .txtflwr {
+      margin-top: -20px;
+    }
+
+    .followers {
+      color: gray;
+      margin-right: -200px;
+      margin-top: -125px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flwr {
+      color: rgb(0, 170, 255);
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .btn-flw {
+      width: 80%;
+      height: 50px;
+      border-radius: 25px;
+      border: 0px solid yellow;
+      background-color: rgb(255, 242, 0);
+      font-weight: bolder;
+      color: rgb(102, 102, 102);
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="butterfly.jpg" alt="Butterfly" class="butterflyjpg" width="100%" height="40%">
+      <div class="p-div">
+        <img src="person.png" alt="Person doodle" class="doodle">
+      </div>
+      <h2 class="mf">Morgan Freeman</h2>
+      <p class="bc">Butterfly Collector</p>
+
+      <div class="following">
+        <p class="flwn">12</p>
+        <p class="txtflwn">Following</p>
+      </div>
+      <div class="followers">
+        <p class="flwr">1000</p>
+        <p class="txtflwr">Followers</p>
+      </div>
+
+      <button class="btn-flw">Follow</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
